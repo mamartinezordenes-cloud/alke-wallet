@@ -93,3 +93,26 @@ a {
 a:hover {
     text-decoration: underline;
 }
+* {
+    color: #e2e8f0;
+}
+
+/* Mejora lectura en cards y formularios */
+.card, .container {
+    color: #e2e8f0;
+}
+
+/* Inputs con texto visible */
+input {
+    color: #0f172a;
+}
+
+/* Placeholder más suave */
+input::placeholder {
+    color: #64748b;
+}
+
+/* Títulos más visibles */
+h1, h2, h3, h4, h5 {
+    color: #f8fafc;
+}
