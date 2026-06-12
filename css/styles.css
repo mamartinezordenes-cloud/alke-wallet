@@ -1,202 +1,95 @@
+/* =========================
+   BASE GENERAL
+========================= */
+
 body {
-
-background: linear-gradient(to right, #eef2f7, #dfe9f3);
-
-font-family: Arial, Helvetica, sans-serif;
-
-min-height: 100vh;
-
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: #e2e8f0;
 }
 
-/* NAVBAR */
-
-.navbar {
-
-background: linear-gradient(to right, #0f172a, #1e293b) !important;
-
-box-shadow: 0px 3px 12px rgba(0,0,0,0.15);
-
-padding: 15px;
-
-}
-
-.navbar-brand {
-
-font-size: 28px;
-
-font-weight: bold;
-
-}
-
-.nav-link {
-
-font-size: 18px;
-
-transition: 0.3s;
-
-}
-
-.nav-link {
-
-color: #38bdf8 !important;
-
-}
-
-/* TARJETAS */
-
-.card {
-
-border: none;
-
-border-radius: 25px;
-
-transition: 0.4s;
-
-background-color: white;
-
-overflow: hidden;
-
-}
-
-.card {
-
-transform: translateY(-8px);
-
-box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
-
-}
-
-/* TITULOS */
-
-h1, h2, h3, h4 {
-
-font-weight: bold;
-
-color: #0f172a;
-
-}
-
-/* SALDO */
-
-#saldoMenu,
-#saldo,
-#saldoTransferencia {
-
-font-size: 55px;
-
-font-weight: bold;
-
-color: #16a34a;
-
-}
-
-/* BOTONES */
-
-.btn-dark {
-
-background: linear-gradient(to right, #0f172a, #1e293b);
-
-border: none;
-
-border-radius: 12px;
-
-padding: 12px 25px;
-
-font-size: 18px;
-
-transition: 0.3s;
-
-}
-
-.btn-dark {
-
-transform: scale(1.05);
-
-background: linear-gradient(to right, #1e293b, #334155);
-
-}
-
-/* FORMULARIOS */
-
-.form-control {
-
-border-radius: 12px;
-
-padding: 12px;
-
-}
-
-/* TABLAS */
-
-table {
-
-background-color: white;
-
-border-radius: 15px;
-
-overflow: hidden;
-
-}
-
-/* MENSAJES */
-
-#mensaje,
-#mensajeDeposito,
-#mensajeTransferencia,
-#mensajeMovimiento {
-
-font-weight: bold;
-
-margin-top: 10px;
-
-}
-
-/* CONTENEDORES */
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
 
 .container {
-
-animation: aparecer 0.6s ease;
-
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 20px;
 }
 
-/* ANIMACIÓN */
+/* =========================
+   TARJETAS (CARDS)
+========================= */
 
-@keyframes aparecer {
-
-from {
-
-    opacity: 0;
-
-    transform: translateY(20px);
-
+.card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-to {
-
-    opacity: 1;
-
-    transform: translateY(0);
-
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.5);
 }
 
+/* =========================
+   BOTONES
+========================= */
+
+button {
+    background: linear-gradient(135deg, #38bdf8, #2563eb);
+    border: none;
+    padding: 10px 16px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: 0.3s ease;
 }
 
-/* RESPONSIVE */
-
-@media (max-width: 768px) {
-
-#saldoMenu,
-#saldo,
-#saldoTransferencia {
-
-    font-size: 40px;
-
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
 }
 
-.navbar-brand {
+/* =========================
+   INPUTS
+========================= */
 
-    font-size: 22px;
-
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 10px;
+    border: none;
+    outline: none;
 }
 
+/* =========================
+   TEXTOS
+========================= */
+
+h1, h2, h3 {
+    color: #f1f5f9;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+    color: #38bdf8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
